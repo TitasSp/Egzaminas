@@ -32,6 +32,12 @@ int main()
                 }
             }
         }
+        // Po ciklo per tokeno simbolius, jei liko sukaupta žodžio dalis
+        if (!cleaned_word_segment.empty()) {
+            word_counts[cleaned_word_segment]++;
+        }
+    }
+    input_file.close();
 
     return 0;
 }
