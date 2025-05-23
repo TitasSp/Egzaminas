@@ -54,8 +54,10 @@ int main()
 
     // std::map saugo elementus surūšiuotus pagal raktą (žodį)
     for (const auto& pair : word_counts) {
+        // pair.first - žodis(raktas), paird.second - pasikartojimų skaičius
         unique_words_total++;
-        if (pair.second > 1) {
+        if (pair.second > 1) { // Jei žodis pasikartojo daugiau nei 1 kartą
+
             output_file << pair.first << ": " << pair.second << "\n";
             frequent_words_count++;
         }
