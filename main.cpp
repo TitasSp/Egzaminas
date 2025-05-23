@@ -39,5 +39,19 @@ int main()
     }
     input_file.close();
 
+    std::string output_filename = "output.txt";
+    std::ofstream output_file(output_filename);
+    if (!output_file.is_open()) {
+        std::cerr << "Klaida: Nepavyko sukurti/atidaryti išvesties failo '" << output_filename << "'" << std::endl;
+        return 1;
+    }
+
+    output_file << "Žodžiai, kurie tekste pasikartojo daugiau nei vieną kartą:\n";
+    output_file << "--------------------------------------------------------------\n";
+
+    int unique_words_total = 0;
+    int frequent_words_count = 0;
+
+
     return 0;
 }
