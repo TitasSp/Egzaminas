@@ -1,2 +1,6 @@
 Žodžiai, kurie tekste pasikartojo daugiau nei vieną kartą:
 --------------------------------------------------------------
+as: 2
+kaip: 2
+labas: 3
+ne: 3

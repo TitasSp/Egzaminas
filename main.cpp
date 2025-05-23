@@ -52,6 +52,20 @@ int main()
     int unique_words_total = 0;
     int frequent_words_count = 0;
 
+    // std::map saugo elementus surūšiuotus pagal raktą (žodį)
+    for (const auto& pair : word_counts) {
+        unique_words_total++;
+        if (pair.second > 1) {
+            output_file << pair.first << ": " << pair.second << "\n";
+            frequent_words_count++;
+        }
+    }
+    output_file.close();
+
+    std::cout << "Results saved in file: '" << output_filename << "'" << std::endl;
+    std::cout << "Unique words in text: " << unique_words_total << std::endl;
+    std::cout << "More than once repeated: " << frequent_words_count << std::endl;
+
 
     return 0;
 }
