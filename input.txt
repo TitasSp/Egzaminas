@@ -1,0 +1,92 @@
+Sequence vs Associative containers in C++
+Last Updated : 10 Nov, 2022
+Sequence Containers
+
+In standard template library they refer to the group of container class template, we use to them store data. One common property as the name suggests is that elements can be accessed sequentially. 
+Each of the following containers use different algorithm for data storage thus for different operations they have different speed. And all the elements in the containers should be of same type. 
+
+array = It implements non-resizable array. 
+ex: int arr[10]; // array of fixed size 10.
+vector = It implements dynamic array with faster random access, these are quite useful as unlike arrays they can resize. 
+ex: vector<int> v; // vector of int type
+dequeue It is used to implement double-ended queue with faster random access 
+ex: dequeue dq; //dequeue of character type
+forward_list : It implements singly linked list. 
+ex: forward_list fl; // forward_list of int type.
+list : It implements double linked list. 
+ex: list l; // lists of int
+Associative containers
+
+In standard template libraries, they refer to the group of class templates used to implement associative arrays. They are used to store elements but have some constraints placed on their elements. 
+And two important characteristics of these containers are 
+
+There exists a key. In case of map and set, key is unique. In case of multimap and multiset, multiple values for a key are allowed. In case of map and multimap, there are key-value pairs. In case of set, there are only keys.
+Elements follow strict weak ordering..
+These are the following which comes under the associative containers  
+
+map: here each key we create must be unique. 
+ex: map geek_no; // Here first data type is key and second data type is value
+set: here also key we create must be unique but one important distinction from map is that here the value itself acts as a key so it means that elements in set are unique i.e. no repetition. 
+ex: set s; // value itself acts as a key.
+multimap: same as map but here key need not to be unique. 
+ex: multimap geeks_no;
+multiset: same as set but here uniqueness of elements doesn't matter i.e. we can have same element multiple time unlike set. 
+ex: multiset marks;
+Sequence vs associative (complexity wise) 
+In sequence containers  
+
+Simple insertion takes constant time.
+Front has constant amortized time.
+Insertion in the middle is quite slow.
+In associative containers, most complexities are in logarithmic terms  
+
+Inserting an element is O(log n)
+Removing an element O(log n)
+Searching for an element O(log n)
+Incrementing or decrementing iterator O(1)(amortized)
+Insertion in middle is faster.
+Unordered Associative Container
+
+Note that every associative container has unordered associative container which contains elements without any specific order. Examples of unordered associative containers are unordered_set, unordered_map, unordered_multimap, unordered_multiset.
+ 
+
+
+
+Comment
+
+More info
+
+Advertise with us
+Next Article 
+std::integer_sequence in C++ 14
+Similar Reads
+Containers in C++ STL
+Standard Template Library (STL) provides the built-in implementation of commonly used data structures known as containers. A container is a holder object that stores a collection of other objects (its elements). They are implemented as class templates, which allows great flexibility in the data type
+3 min read
+Operator Precedence and Associativity in C++
+In C++,operator precedence and associativity are important concepts that determine the order in which operators are evaluated in an expression. Operator precedence tells the priority of operators, while associativity determines the order of evaluation when multiple operators of the same precedence l
+3 min read
+std::integer_sequence in C++ 14
+When programming, loops, and iteration are often required by developers. Occasionally, looping through a range of numbers whose span is unknown becomes necessary std::integer sequence is useful in that scenario. By using std::integer_sequence provided by C++14, one can create a sequence of integers
+3 min read
+Can We Inherit STL Containers?
+In C++, a common question that arises in our mind is: Can we inherit from Standard Template Library (STL) containers like std::vector, std::map, or std::list? The straightforward answer is no, we should not inherit from STL containers. In this article, we will learn why inheriting from STL container
+6 min read
+Why C++ Containers Don't Allow Incomplete Types?
+C++ Standard Template Library (STL) provides various containers such as std::vector, std::list, std::map, and more. These containers are essential for managing collections of objects efficiently. However, we might encounter an issue when trying to use incomplete types with these containers.In this a
+4 min read
+Associative arrays in C++
+Associative arrays are also called map or dictionaries. In C++. These are special kind of arrays, where indexing can be numeric or any other data type i.e can be numeric 0, 1, 2, 3.. OR character a, b, c, d... OR string geek, computers... These indexes are referred as keys and data stored at that po
+2 min read
+queue::front() and queue::back() in C++ STL
+Queue are a type of container adaptors which operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front. queue::front() This function is used to reference the first or the oldest element of the queue container. This function can
+3 min read
+std::back_inserter in C++
+std::back_inserter constructs a back-insert iterator that inserts new elements at the end of the container to which it is applied. It is defined inside the header file . A back-insert iterator is a special type of output iterator designed to allow algorithms that usually overwrite elements (such as
+4 min read
+Structures, Unions and Enumerations in C++
+Structures, unions and enumerations (enums) are 3 user defined data types in C++. User defined data types allow us to create a data type specifically tailored for a particular purpose. It is generally created from the built-in or derived data types. Let's take a look at each of them one by one.Struc
+3 min read
+C++ STL Set Insertion and Deletion
+Prerequisite: Set A Set is a container implemented in C++ language in STL and has a concept similar to how the set is defined in mathematics. The fact that separates the set from the other containers is that it contains only the distinct elements and elements can be traversed in sorted order. Having
+7 min read
