@@ -5,6 +5,49 @@
 #include <set>
 #include <sstream>
 #include <cctype>
+#include <regex>
+
+// Patikrina ar žodis yra URL
+bool isUrl(const std::string& token) {
+    std::regex url_regex(R"(^(https?:\/\/)?(www\.)?[a-zA-Z0-9\.-]+\.[a-z]{2,}(\/\S*)?$)");
+    return std::regex_match(token, url_regex);
+}
+
+// Funkcija URL'ų suradimui ir išvedimui į failą
+bool extractUrls(const std::string& input_filename, const std::string& output_filename) {
+    std::ifstream input(input_filename);
+    std::ofstream output(output_filename);
+
+    if (!input.is_open() || !output.is_open()) {
+        std::cerr << "Nepavyko atidaryti failu URL." << std::endl;
+        return false;
+    }
+
+    std::string line;
+    std::set<std::string> found_urls;
+
+    while (std::getline(input, line)) {
+        std::istringstream iss(line);
+        std::string token;
+        while (iss >> token) {
+            if (isUrl(token)) {
+                found_urls.insert(token);
+            }
+        }
+    }
+
+    output << "Rasti URL adresai:\n";
+    output << "-------------------\n";
+    for (const auto& url : found_urls) {
+        output << url << "\n";
+    }
+
+    input.close();
+    output.close();
+
+    std::cout << "URL issaugoti faile: " << output_filename << std::endl;
+    return true;
+}
 
 // Funkcija žodžio išvalymui ir normalizavimui
 std::string normalizeWord(const std::string& token) {
@@ -115,6 +158,7 @@ int main() {
     const std::string input_filename = "input.txt";
     const std::string output_filename = "output.txt";
     const std::string cross_ref_filename = "cross_reference.txt";
+    const std::string url_output_file = "urls.txt";
 
     // Duomenų struktūros žodžių saugojimui
     std::map<std::string, int> word_counts;          // žodis → pasikartojimų skaičius
@@ -134,6 +178,11 @@ int main() {
     if (createOutputFile(output_filename, word_counts)) {
         std::cout << "Rezultatai issaugoti faile: " << output_filename << std::endl;
     }
+
+    if(extractUrls(input_filename, url_output_file)){
+        std::cout << "URL adresai issaugoti faile: " << url_output_file << std::endl;
+    }
+
 
     return 0;
 }
