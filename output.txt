@@ -1,9 +1,10 @@
-Žodžiai, kurie tekste pasikartojo daugiau nei vieną kartą:
+Zodziai, kurie tekste pasikartojo daugiau nei viena karta:
 --------------------------------------------------------------
-as: 2
+as: 3
 dw: 2
 kaip: 2
 kk: 2
-labas: 3
+labas: 4
 ne: 3
 s: 2
+tu: 4

@@ -6,20 +6,27 @@
 #include <sstream>
 #include <cctype>
 
-int main()
-{
-    std::string filename = "input.txt";
+// Funkcija žodžio išvalymui ir normalizavimui
+std::string normalizeWord(const std::string& token) {
+    std::string cleaned;
+    for (char c : token) {
+        char lower = std::tolower(c);
+        if (std::isalpha(lower)) {
+            cleaned += lower;
+        }
+    }
+    return cleaned;
+}
+
+// Funkcija failo nuskaitymui ir žodžių analizei
+bool analyzeTextFile(const std::string& filename, 
+                     std::map<std::string, int>& word_counts,
+                     std::map<std::string, std::set<int>>& word_lines) {
     std::ifstream input_file(filename);
     if (!input_file.is_open()) {
         std::cerr << "Klaida atidarant faila: " << filename << std::endl;
-        return 1;
+        return false;
     }
-
-    // Map: žodis → kiek kartų pasikartojo
-    std::map<std::string, int> word_counts;
-
-    // Map: žodis → eilučių numeriai, kur jis buvo paminėtas
-    std::map<std::string, std::set<int>> word_lines;
 
     std::string line;
     int line_number = 0;
@@ -27,38 +34,32 @@ int main()
     // Nuskaitome failą eilutė po eilutės
     while (std::getline(input_file, line)) {
         ++line_number;
-        std::istringstream iss(line); 
-        std::string token; // Laikinas kintamasis žodžiams saugoti
+        std::istringstream iss(line);
+        std::string token;
 
-        // Išvalome eilutę nuo nereikalingų simbolių ir skaidome į žodžius
+        // Skaidome eilutę į žodžius
         while (iss >> token) {
-            std::string cleaned; 
-            for (char c : token) {
-                char lower = std::tolower(c); // Paverčiame simbolį į mažąsias raides
-                if (std::isalpha(lower)) // Patikriname, ar simbolis yra raidė
-                    cleaned += lower;
-
-                else if (!cleaned.empty()) {
-                    // Jei simbolis nėra raidė, bet jau turime surinktą žodį, įrašome jį
-                    word_counts[cleaned]++;
-                    word_lines[cleaned].insert(line_number);
-                    cleaned.clear();
-                }
-            }
-            // Jei po ciklo liko surinktas žodis, įrašome jį
-            if (!cleaned.empty()) {
-                word_counts[cleaned]++;
-                word_lines[cleaned].insert(line_number);
+            std::string normalized = normalizeWord(token);
+            
+            if (!normalized.empty()) {
+                word_counts[normalized]++;
+                word_lines[normalized].insert(line_number);
             }
         }
     }
+    
     input_file.close();
+    return true;
+}
 
-    std::string output_cr_name = "cross_reference.txt";
-    std::ofstream output_cr(output_cr_name);
+// Funkcija kryžminių nuorodų failo sukūrimui
+bool createCrossReferenceFile(const std::string& filename,
+                              const std::map<std::string, int>& word_counts,
+                              const std::map<std::string, std::set<int>>& word_lines) {
+    std::ofstream output_cr(filename);
     if (!output_cr.is_open()) {
-        std::cerr << "Nepavyko sukurti išvesties failo: " << output_cr_name << std::endl;
-        return 1;
+        std::cerr << "Nepavyko sukurti isvesties failo: " << filename << std::endl;
+        return false;
     }
 
     output_cr << "Pasikartojantys zodziai ir ju eiluciu numeriai:\n";
@@ -66,9 +67,8 @@ int main()
 
     for (const auto& pair : word_counts) {
         if (pair.second > 1) {
-            output_cr << pair.first << " ("
-                        << pair.second << " kartai): eilutes ";
-            for (int ln : word_lines[pair.first]) {
+            output_cr << pair.first << " (" << pair.second << " kartai): eilutes ";
+            for (int ln : word_lines.at(pair.first)) {
                 output_cr << ln << " ";
             }
             output_cr << "\n";
@@ -76,17 +76,19 @@ int main()
     }
 
     output_cr.close();
-    std::cout << "Rezultatai issaugoti faile: " << output_cr_name << std::endl;
+    return true;
+}
 
-
-    std::string output_filename = "output.txt";
-    std::ofstream output_file(output_filename);
+// Funkcija pagrindinių rezultatų failo sukūrimui
+bool createOutputFile(const std::string& filename,
+                      const std::map<std::string, int>& word_counts) {
+    std::ofstream output_file(filename);
     if (!output_file.is_open()) {
-        std::cerr << "Klaida: Nepavyko sukurti/atidaryti išvesties failo '" << output_filename << "'" << std::endl;
-        return 1;
+        std::cerr << "Klaida: Nepavyko sukurti/atidaryti isvesties failo '" << filename << "'" << std::endl;
+        return false;
     }
 
-    output_file << "Žodžiai, kurie tekste pasikartojo daugiau nei vieną kartą:\n";
+    output_file << "Zodziai, kurie tekste pasikartojo daugiau nei viena karta:\n";
     output_file << "--------------------------------------------------------------\n";
 
     int unique_words_total = 0;
@@ -94,16 +96,44 @@ int main()
 
     // std::map saugo elementus surūšiuotus pagal raktą (žodį)
     for (const auto& pair : word_counts) {
-        // pair.first - žodis(raktas), paird.second - pasikartojimų skaičius
         unique_words_total++;
-        if (pair.second > 1) { // Jei žodis pasikartojo daugiau nei 1 kartą
-
+        if (pair.second > 1) {
             output_file << pair.first << ": " << pair.second << "\n";
             frequent_words_count++;
         }
     }
-    output_file.close();
 
-    std::cout << "Rezultatai issaugoti faile: " << output_filename << std::endl;
+    output_file.close();
+    
+    std::cout << "Rasta unikaliu zodziu: " << unique_words_total << std::endl;
+    std::cout << "Daugiau nei karta pasikartojanciu zodziu: " << frequent_words_count << std::endl;
+    
+    return true;
+}
+
+int main() {
+    const std::string input_filename = "input.txt";
+    const std::string output_filename = "output.txt";
+    const std::string cross_ref_filename = "cross_reference.txt";
+
+    // Duomenų struktūros žodžių saugojimui
+    std::map<std::string, int> word_counts;          // žodis → pasikartojimų skaičius
+    std::map<std::string, std::set<int>> word_lines; // žodis → eilučių numeriai
+
+    // Analizuojame įvesties failą
+    if (!analyzeTextFile(input_filename, word_counts, word_lines)) {
+        return 1;
+    }
+
+    // Kuriame cross reference faila
+    if (createCrossReferenceFile(cross_ref_filename, word_counts, word_lines)) {
+        std::cout << "Cross-reference issaugotas faile: " << cross_ref_filename << std::endl;
+    }
+
+    // Kuriame pagrindiniu rezultatu faila
+    if (createOutputFile(output_filename, word_counts)) {
+        std::cout << "Rezultatai issaugoti faile: " << output_filename << std::endl;
+    }
+
     return 0;
 }

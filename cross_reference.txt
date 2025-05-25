@@ -1,9 +1,10 @@
 Pasikartojantys zodziai ir ju eiluciu numeriai:
 --------------------------------------------------
-as (2 kartai): eilutes 1 
+as (3 kartai): eilutes 1 5 
 dw (2 kartai): eilutes 1 
 kaip (2 kartai): eilutes 1 
 kk (2 kartai): eilutes 3 4 
-labas (3 kartai): eilutes 1 
+labas (4 kartai): eilutes 1 5 
 ne (3 kartai): eilutes 1 
 s (2 kartai): eilutes 1 
+tu (4 kartai): eilutes 1 7 8 
