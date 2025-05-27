@@ -1,11 +1,383 @@
 Pasikartojantys zodziai ir ju eiluciu numeriai:
 --------------------------------------------------
-as (3 kartai): eilutes 1 6 
-dw (2 kartai): eilutes 1 
-kaip (2 kartai): eilutes 1 
-kk (2 kartai): eilutes 3 4 
-labas (4 kartai): eilutes 1 6 
-ne (3 kartai): eilutes 1 
+a (7 kartai): eilutes 181 182 
+abstrakcijos (2 kartai): eilutes 102 
+addasm (2 kartai): eilutes 169 172 
+aiškiai (2 kartai): eilutes 46 47 
+algoritmus (4 kartai): eilutes 116 118 120 124 
+anksčiau (2 kartai): eilutes 20 155 
+antraštes (2 kartai): eilutes 122 
+aparatinės (2 kartai): eilutes 102 
+apie (16 kartai): eilutes 11 17 35 79 80 81 83 84 86 87 88 90 91 93 94 97 
+apima (2 kartai): eilutes 116 118 
+apimties (2 kartai): eilutes 12 114 
+apėmė (3 kartai): eilutes 24 71 
+ar (6 kartai): eilutes 1 3 138 146 149 
+arba (7 kartai): eilutes 1 116 120 142 144 149 
+architektūrą (2 kartai): eilutes 176 193 
+argumentą (2 kartai): eilutes 181 
+arm (2 kartai): eilutes 156 
+asemblerio (8 kartai): eilutes 50 149 154 183 187 
+asm (11 kartai): eilutes 149 155 158 164 173 176 190 193 199 206 212 
+asmraktinį (2 kartai): eilutes 155 199 
+atminties (5 kartai): eilutes 1 7 18 85 116 
+atskirai (2 kartai): eilutes 46 160 
+atskirą (2 kartai): eilutes 18 51 
+att (2 kartai): eilutes 11 12 
+atžvilgiu (2 kartai): eilutes 12 18 
+aukšto (4 kartai): eilutes 1 5 149 
+bcpl (2 kartai): eilutes 12 18 
+be (7 kartai): eilutes 1 12 18 102 116 120 142 
+bei (6 kartai): eilutes 3 75 79 116 129 
+bendrinius (2 kartai): eilutes 120 124 
+bendrosios (3 kartai): eilutes 1 12 89 
+bet (5 kartai): eilutes 12 45 120 146 
+biblioteka (10 kartai): eilutes 5 112 115 116 118 122 124 135 
+bibliotekos (18 kartai): eilutes 71 79 86 88 90 92 94 97 104 116 118 122 124 126 221 
+biblioteką (6 kartai): eilutes 20 28 83 116 122 
+bibliotekų (3 kartai): eilutes 80 84 89 
+bjarne (4 kartai): eilutes 1 11 12 129 
+bus (2 kartai): eilutes 64 146 
+buvo (41 kartai): eilutes 1 3 5 12 18 22 24 26 28 30 35 37 40 71 73 114 133 144 155 
+būti (8 kartai): eilutes 42 43 50 138 142 146 183 
+būtų (2 kartai): eilutes 122 156 
+c (189 kartai): eilutes 1 3 5 7 11 12 14 17 18 22 24 26 28 30 32 35 37 40 44 45 50 51 54 55 57 58 59 60 61 62 63 64 65 68 69 71 73 75 79 80 81 83 84 86 87 88 90 91 93 101 102 104 114 115 116 118 122 124 126 128 129 131 138 140 141 142 144 146 149 152 155 157 158 160 162 165 169 187 199 219 220 
+clang (3 kartai): eilutes 138 154 156 
+cy (2 kartai): eilutes 60 73 
+cz (2 kartai): eilutes 61 75 
+c“ (2 kartai): eilutes 37 129 
+d (3 kartai): eilutes 28 30 
+dabar (2 kartai): eilutes 122 144 
+daktaro (2 kartai): eilutes 12 
+dalies (2 kartai): eilutes 5 124 
+dalis (4 kartai): eilutes 46 118 124 
+dalį (2 kartai): eilutes 104 142 
+dar (5 kartai): eilutes 1 28 97 124 
+darbo (3 kartai): eilutes 65 69 129 
+daug (2 kartai): eilutes 71 142 
+daugialypiai (2 kartai): eilutes 120 
+daugiau (5 kartai): eilutes 1 28 98 116 138 
+daugiausia (4 kartai): eilutes 7 73 80 102 
+dažnai (2 kartai): eilutes 142 149 
+didžiąją (2 kartai): eilutes 104 142 
+dirbti (3 kartai): eilutes 12 124 
+du (3 kartai): eilutes 102 122 158 
+dėl (10 kartai): eilutes 7 82 85 89 92 95 96 142 
+eilutės (2 kartai): eilutes 18 144 
+eksportuoja (2 kartai): eilutes 120 122 
+extern (3 kartai): eilutes 146 169 187 
+failų (4 kartai): eilutes 49 83 116 
+funkcija (2 kartai): eilutes 43 146 
+funkcijas (12 kartai): eilutes 5 12 17 18 24 81 116 122 144 149 
+funkcijomis (2 kartai): eilutes 5 146 
+funkcijos (7 kartai): eilutes 18 24 42 49 144 146 
+funkciją (4 kartai): eilutes 20 45 165 169 
+funkcijų (17 kartai): eilutes 1 12 14 18 28 79 102 124 135 138 144 146 149 
+gairių (3 kartai): eilutes 135 
+gairės (3 kartai): eilutes 128 129 133 
+galima (7 kartai): eilutes 120 122 124 142 154 
+galiojanti (2 kartai): eilutes 104 144 
+gcc (3 kartai): eilutes 138 154 
+global (2 kartai): eilutes 178 195 
+globalvar (2 kartai): eilutes 187 190 
+greita (2 kartai): eilutes 12 
+gruodžio (5 kartai): eilutes 28 32 35 75 
+grupė (2 kartai): eilutes 65 69 
+grąžinti (3 kartai): eilutes 174 191 213 
+ibm (2 kartai): eilutes 1 154 
+importuoti (4 kartai): eilutes 122 167 185 201 
+int (8 kartai): eilutes 108 169 171 187 189 203 
+integruotas (6 kartai): eilutes 81 84 87 91 124 155 
+integruoti (3 kartai): eilutes 48 86 88 
+integruotus (3 kartai): eilutes 80 90 93 
+iostream (2 kartai): eilutes 106 116 
+ir (93 kartai): eilutes 1 3 5 7 12 14 18 24 28 30 35 37 40 44 46 48 51 54 65 71 73 75 77 79 96 98 102 116 118 120 122 124 126 129 131 135 138 141 142 144 146 149 154 156 157 160 181 183 
+iso (7 kartai): eilutes 5 65 69 75 77 129 
+isoiec (24 kartai): eilutes 5 56 69 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 
+iš (20 kartai): eilutes 5 12 14 35 42 86 88 102 116 122 124 142 144 146 165 173 187 190 
+išimtis (2 kartai): eilutes 24 116 
+išimčių (2 kartai): eilutes 116 138 
+išleista (6 kartai): eilutes 1 22 24 26 71 73 
+išleistas (4 kartai): eilutes 22 24 26 28 
+ištaisytos (2 kartai): eilutes 69 73 
+išteklių (2 kartai): eilutes 3 
+išvesties (4 kartai): eilutes 20 124 208 
+jau (2 kartai): eilutes 86 88 
+ji (9 kartai): eilutes 1 7 12 46 65 69 71 116 
+jis (7 kartai): eilutes 5 35 42 124 155 
+jo (4 kartai): eilutes 12 42 114 138 
+jokių (3 kartai): eilutes 47 50 102 
+jos (3 kartai): eilutes 3 40 
+juos (2 kartai): eilutes 52 116 
+ją (3 kartai): eilutes 7 102 146 
+jį (2 kartai): eilutes 116 124 
+kad (9 kartai): eilutes 12 35 116 122 138 149 156 165 
+kai (12 kartai): eilutes 1 7 12 35 86 88 142 144 149 156 
+kaip (30 kartai): eilutes 1 5 48 65 69 73 75 80 102 114 116 118 122 124 142 144 149 183 
+kalba (11 kartai): eilutes 1 5 12 26 32 37 100 102 116 217 
+kalboje (7 kartai): eilutes 122 133 144 183 
+kalbomis (3 kartai): eilutes 51 149 
+kalbos (15 kartai): eilutes 1 5 7 12 18 22 30 35 71 79 129 149 
+kalbos“ (2 kartai): eilutes 22 24 
+kalbą (6 kartai): eilutes 12 26 50 102 124 
+kalbų (4 kartai): eilutes 50 146 149 218 
+kartą (4 kartai): eilutes 1 32 35 69 
+kintamasis (2 kartai): eilutes 187 190 
+kita (2 kartai): eilutes 71 144 
+kitos (2 kartai): eilutes 12 65 
+kitus (2 kartai): eilutes 18 142 
+kitų (4 kartai): eilutes 1 3 102 138 
+klaidų (2 kartai): eilutes 7 116 
+klases (3 kartai): eilutes 14 24 
+klasėmis (2 kartai): eilutes 12 18 
+klasėmis“ (2 kartai): eilutes 14 37 
+kodas (5 kartai): eilutes 138 149 160 162 176 
+kodo (3 kartai): eilutes 142 158 164 
+kodu (3 kartai): eilutes 144 160 
+kodą (3 kartai): eilutes 149 154 162 
+komitetas (2 kartai): eilutes 75 138 
+kompiliatoriai (3 kartai): eilutes 152 156 
+kompiliatoriui (2 kartai): eilutes 14 162 
+kompiliatorius (2 kartai): eilutes 1 138 
+kompiliatorių (11 kartai): eilutes 18 126 129 138 149 151 154 155 200 219 
+kompiuterių (3 kartai): eilutes 1 12 216 
+kt (3 kartai): eilutes 116 124 
+kuri (5 kartai): eilutes 5 26 104 116 144 
+kuria (2 kartai): eilutes 120 124 
+kuriant (2 kartai): eilutes 1 12 
+kurie (12 kartai): eilutes 7 86 88 118 120 124 142 144 156 
+kurios (5 kartai): eilutes 7 12 144 
+kuris (8 kartai): eilutes 5 22 35 69 114 122 144 146 
+kurių (5 kartai): eilutes 47 86 122 142 144 
+kurti (4 kartai): eilutes 18 51 102 124 
+kurį (4 kartai): eilutes 18 102 124 154 
+l (2 kartai): eilutes 1 
+labai (3 kartai): eilutes 12 149 
+laiko (3 kartai): eilutes 116 124 
+leidimas (2 kartai): eilutes 22 24 
+leidžia (4 kartai): eilutes 142 154 156 199 
+lygio (7 kartai): eilutes 1 5 12 149 
+m (46 kartai): eilutes 1 5 11 12 17 18 20 22 24 26 28 30 32 35 57 58 59 60 61 62 63 68 69 71 73 75 144 
+main (4 kartai): eilutes 108 171 189 203 
+maincpp (3 kartai): eilutes 166 184 200 
+mascitti (2 kartai): eilutes 35 
+masyvai (2 kartai): eilutes 120 144 
+metai (2 kartai): eilutes 5 56 
+metu (6 kartai): eilutes 22 65 68 77 116 122 
+metų (2 kartai): eilutes 22 124 
+modulius (3 kartai): eilutes 93 122 
+modulį (2 kartai): eilutes 122 
+mokslininkas (2 kartai): eilutes 1 12 
+mėn (6 kartai): eilutes 5 28 32 35 75 
+narių (2 kartai): eilutes 24 
+naudingos (2 kartai): eilutes 12 42 
+naudoja (2 kartai): eilutes 104 149 
+naudojama (2 kartai): eilutes 12 154 
+naudojamas (3 kartai): eilutes 35 146 154 
+naudojant (10 kartai): eilutes 120 122 149 162 176 193 199 200 212 
+naudojimui (2 kartai): eilutes 12 45 
+naudoti (2 kartai): eilutes 45 156 
+naujo (2 kartai): eilutes 89 96 
+naują (6 kartai): eilutes 12 18 69 86 94 97 
+naujų (7 kartai): eilutes 18 28 95 142 144 
+našumą (3 kartai): eilutes 48 49 149 
+ne (3 kartai): eilutes 20 51 116 
+nebuvo (2 kartai): eilutes 22 144 
+nedidelis (2 kartai): eilutes 26 73 
+nei (2 kartai): eilutes 45 124 
+neoficialiai (5 kartai): eilutes 5 35 69 71 75 
+nepaisant (2 kartai): eilutes 7 138 
+nereikalingos (2 kartai): eilutes 144 
+nes (3 kartai): eilutes 12 22 124 
+nesuderinamos (2 kartai): eilutes 144 
+neturėtų (2 kartai): eilutes 49 50 
+nuo (8 kartai): eilutes 1 5 124 138 146 149 
+nurodyti (3 kartai): eilutes 35 52 154 
+nusprendė (2 kartai): eilutes 12 138 
+nėra (2 kartai): eilutes 47 142 
+o (15 kartai): eilutes 1 3 5 12 20 24 26 32 42 51 122 142 154 
+oop (2 kartai): eilutes 1 
+operatorių (2 kartai): eilutes 18 20 
+p (2 kartai): eilutes 1 
+padėti (2 kartai): eilutes 129 
+pagrindiniai (4 kartai): eilutes 3 54 126 
+pagrindinis (4 kartai): eilutes 101 115 131 141 
+pagrindinius (2 kartai): eilutes 102 158 
+pagrindinės (5 kartai): eilutes 71 116 128 129 133 
+pagrįstas (2 kartai): eilutes 42 102 
+palaiko (2 kartai): eilutes 144 149 
+palaikymą (4 kartai): eilutes 48 116 
+papildomų (2 kartai): eilutes 1 102 
+papildymų (2 kartai): eilutes 28 71 
+pasiekti (2 kartai): eilutes 122 
+paskelbtas (2 kartai): eilutes 28 30 
+paskelbė (4 kartai): eilutes 5 65 69 75 
+paskirties (3 kartai): eilutes 1 12 89 
+pat (7 kartai): eilutes 3 5 73 77 80 104 215 
+patobulintą (2 kartai): eilutes 18 149 
+patvirtintas (2 kartai): eilutes 28 114 
+patį (2 kartai): eilutes 48 122 
+pavadinimas (3 kartai): eilutes 35 56 
+pavadinimą (2 kartai): eilutes 35 37 
+pavadinimų (5 kartai): eilutes 18 35 138 146 165 
+pavyzdžiui (7 kartai): eilutes 124 138 142 144 156 
+per (4 kartai): eilutes 12 40 155 
+pirmą (5 kartai): eilutes 1 32 35 69 181 
+plačiai (3 kartai): eilutes 12 124 154 
+plus (2 kartai): eilutes 1 
+plėtinius (4 kartai): eilutes 80 88 90 162 
+plėtinių (6 kartai): eilutes 86 89 94 95 96 97 
+plėtinys (2 kartai): eilutes 1 73 
+po (5 kartai): eilutes 28 32 50 75 
+pogrupis (2 kartai): eilutes 102 124 
+pradėjo (3 kartai): eilutes 12 18 
+pradžių (3 kartai): eilutes 5 14 124 
+pridedant (2 kartai): eilutes 1 12 
+pridėjo (2 kartai): eilutes 1 14 
+pridėti (2 kartai): eilutes 181 207 
+prie (3 kartai): eilutes 65 118 135 
+priemones (2 kartai): eilutes 116 122 
+prieš (2 kartai): eilutes 5 37 
+println (3 kartai): eilutes 173 190 212 
+procesoriaus (2 kartai): eilutes 138 149 
+programa (2 kartai): eilutes 104 
+programas (2 kartai): eilutes 3 
+programavimo (18 kartai): eilutes 1 5 12 22 24 30 44 51 95 102 129 149 216 217 218 
+programinės (3 kartai): eilutes 3 12 85 
+programinę (2 kartai): eilutes 3 12 
+programos (3 kartai): eilutes 3 104 149 
+programuotojai (3 kartai): eilutes 7 44 116 
+programuotojams (2 kartai): eilutes 28 129 
+projektas (2 kartai): eilutes 28 114 
+pvz (5 kartai): eilutes 3 49 118 124 
+raktinis (2 kartai): eilutes 144 154 
+rašyti (5 kartai): eilutes 104 116 120 129 131 
+reikšmę (3 kartai): eilutes 35 182 198 
+rengti (2 kartai): eilutes 28 75 
+rezultatas (3 kartai): eilutes 172 173 
+ribotų (2 kartai): eilutes 3 
+rinkinio (2 kartai): eilutes 89 96 
+rinkinius (3 kartai): eilutes 116 118 
+rinkinį (3 kartai): eilutes 86 94 97 
+riscv (2 kartai): eilutes 176 193 
+rodyklių (2 kartai): eilutes 124 142 
 s (2 kartai): eilutes 1 
-tu (4 kartai): eilutes 1 8 9 
-vult (2 kartai): eilutes 5 8 
+saugumo (2 kartai): eilutes 7 142 
+saugų (2 kartai): eilutes 18 131 
+savo (4 kartai): eilutes 11 12 44 51 
+sintaksė (2 kartai): eilutes 101 154 
+sistemas (2 kartai): eilutes 1 3 
+sistemoms (2 kartai): eilutes 1 138 
+sistemos (3 kartai): eilutes 47 83 116 
+sistemą (2 kartai): eilutes 116 
+skaičių (2 kartai): eilutes 116 144 
+skirta (3 kartai): eilutes 114 129 135 
+skirtą (2 kartai): eilutes 94 116 
+skyrius (2 kartai): eilutes 177 194 
+srauto (2 kartai): eilutes 20 104 
+standartas (5 kartai): eilutes 5 28 56 144 
+standarte (2 kartai): eilutes 124 
+standartinė (7 kartai): eilutes 112 115 116 122 124 
+standartinės (7 kartai): eilutes 71 104 116 122 124 126 
+standartinę (3 kartai): eilutes 83 104 122 
+standartizacijos (2 kartai): eilutes 5 77 
+standartizavo (2 kartai): eilutes 26 69 
+standartizuoja (2 kartai): eilutes 5 65 
+standartizuota (2 kartai): eilutes 1 5 
+standarto (11 kartai): eilutes 5 22 24 28 65 69 71 73 114 144 
+standartus (2 kartai): eilutes 5 126 
+standartą (6 kartai): eilutes 104 116 144 167 185 201 
+standartų (6 kartai): eilutes 5 28 68 114 129 138 
+statinės (2 kartai): eilutes 129 135 
+std (4 kartai): eilutes 110 173 190 212 
+stilių (2 kartai): eilutes 44 
+stl (4 kartai): eilutes 118 124 
+straipsnis (3 kartai): eilutes 101 115 141 
+stroustrup (3 kartai): eilutes 11 12 129 
+stroustrupas (10 kartai): eilutes 1 5 12 18 20 30 102 
+stroustrupo (4 kartai): eilutes 12 14 35 104 
+su (21 kartai): eilutes 12 14 18 37 43 51 120 122 124 138 140 144 146 149 154 156 160 
+suderinamumas (3 kartai): eilutes 137 141 149 
+suderinamumo (2 kartai): eilutes 122 164 
+sukurtas (2 kartai): eilutes 46 138 
+sukurti (3 kartai): eilutes 12 48 129 
+sukūrė (3 kartai): eilutes 1 18 124 
+suma (3 kartai): eilutes 204 208 212 
+surinkimas (3 kartai): eilutes 148 162 199 
+surinkimo (5 kartai): eilutes 160 162 165 169 
+surinkimą (2 kartai): eilutes 152 156 
+sveikasis (2 kartai): eilutes 172 204 
+t (2 kartai): eilutes 47 146 
+tai (6 kartai): eilutes 18 43 102 124 142 154 
+taip (8 kartai): eilutes 3 5 7 73 77 80 104 215 
+taisykles (2 kartai): eilutes 129 156 
+tapo (2 kartai): eilutes 22 24 
+tačiau (12 kartai): eilutes 12 47 71 124 138 142 144 149 155 156 
+teikia (5 kartai): eilutes 1 102 122 144 
+tiek (2 kartai): eilutes 102 116 
+tiesioginį (2 kartai): eilutes 102 156 
+tik (3 kartai): eilutes 71 124 135 
+tipai (3 kartai): eilutes 48 144 
+tipo (6 kartai): eilutes 12 18 118 135 142 
+tipus (2 kartai): eilutes 116 142 
+tipų (2 kartai): eilutes 47 116 
+to (4 kartai): eilutes 18 120 142 
+todėl (2 kartai): eilutes 120 155 
+tokias (3 kartai): eilutes 1 118 144 
+tokių (4 kartai): eilutes 1 124 142 149 
+tr (4 kartai): eilutes 79 80 81 82 
+trečiąją (2 kartai): eilutes 32 
+ts (15 kartai): eilutes 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 
+turi (7 kartai): eilutes 12 42 48 102 146 182 183 
+turėti (2 kartai): eilutes 44 48 
+turėtų (8 kartai): eilutes 5 42 43 44 46 51 138 
+tų (2 kartai): eilutes 22 144 
+unix (2 kartai): eilutes 12 20 
+užėmė (2 kartai): eilutes 32 
+vadinama (2 kartai): eilutes 37 71 
+valdymą (2 kartai): eilutes 52 149 
+vardų (2 kartai): eilutes 24 122 
+veikia (3 kartai): eilutes 120 124 142 
+versija (2 kartai): eilutes 22 104 
+versijas (2 kartai): eilutes 65 84 
+versijos (3 kartai): eilutes 24 65 116 
+versiją (4 kartai): eilutes 5 69 116 144 
+vidinį (2 kartai): eilutes 149 152 
+viduryje (2 kartai): eilutes 73 75 
+vietą (2 kartai): eilutes 32 
+visi (2 kartai): eilutes 120 126 
+visiškai (2 kartai): eilutes 44 142 
+visą (2 kartai): eilutes 40 122 
+vėliau (3 kartai): eilutes 1 5 64 
+world“ (3 kartai): eilutes 104 
+x (2 kartai): eilutes 204 209 
+y (4 kartai): eilutes 47 146 204 209 
+yra (19 kartai): eilutes 1 3 7 18 98 102 104 118 122 129 131 138 142 154 
+Įterptinis (2 kartai): eilutes 162 199 
+į (23 kartai): eilutes 3 5 46 80 81 83 84 86 87 88 90 91 93 104 116 122 142 144 146 162 199 
+įgyvendinama (2 kartai): eilutes 1 43 
+įgyvendinimo (2 kartai): eilutes 138 149 
+įrangos (5 kartai): eilutes 3 12 85 102 
+įrangą (2 kartai): eilutes 3 12 
+įskaitant (7 kartai): eilutes 1 3 7 12 14 18 154 
+įtakos (2 kartai): eilutes 12 
+įterpimą (2 kartai): eilutes 14 149 
+įvestiesišvesties (3 kartai): eilutes 20 116 154 
+Šis (3 kartai): eilutes 24 35 154 
+šablonus (2 kartai): eilutes 24 120 
+šablonų (2 kartai): eilutes 1 118 
+šis (2 kartai): eilutes 124 155 
+žemo (3 kartai): eilutes 1 12 149 
+žinoma (2 kartai): eilutes 65 73 
+žinomas (3 kartai): eilutes 5 69 80 
+žodis (2 kartai): eilutes 144 154 
+žodį (2 kartai): eilutes 155 199 
+ʌ (2 kartai): eilutes 1 
+– (9 kartai): eilutes 5 12 18 24 32 65 135 160 162 
+“ (5 kartai): eilutes 1 12 35 155 
+„ (4 kartai): eilutes 1 35 104 
+„c (4 kartai): eilutes 14 22 24 37 
+„hello (2 kartai): eilutes 104 
+„java“ (2 kartai): eilutes 32 
+„r“ (2 kartai): eilutes 209 
+„simula“ (3 kartai): eilutes 12 

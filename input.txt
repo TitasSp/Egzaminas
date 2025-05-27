@@ -1,9 +1,221 @@
-labas, labas ne as toks ne kaip tu as ne. ew, Kaip LABAS, 4\ s s. dw dwww dw \\
-jnj
-kk  https://www.vu.lt/, https://vu.lt/
-kk
-vu.lt
-labas as\
-\
-tu tu  www.vu.lt, vu.lt
-TU
+C++ ( / ˈs iː p l ʌ s p l ʌ s / , tariamas „ C plus plus “ ir kartais sutrumpinamas CPP arba CXX ) yra aukšto lygio , bendrosios paskirties programavimo kalba, kurią sukūrė danų kompiuterių mokslininkas Bjarne Stroustrupas . Pirmą kartą išleista 1985 m. kaip C programavimo kalbos plėtinys , pridėjus objektinio programavimo (OOP) funkcijų, laikui bėgant ji gerokai išsiplėtė, pridedant daugiau OOP ir kitų funkcijų; nuo 1997 m. , kai buvo standartizuota C++98, C++ pridėjo papildomų funkcinių funkcijų, be žemo lygio atminties manipuliavimo galimybių tokioms sistemoms kaip mikrokompiuteriai arba kuriant operacines sistemas, tokias kaip Linux ar Windows , o dar vėliau atsirado tokių funkcijų kaip bendrasis ( šablonų) programavimas . C++ paprastai įgyvendinama kaip kompiliuojama kalba , ir daugelis tiekėjų teikia C++ kompiliatorius , įskaitant „Free Software Foundation“ , LLVM , „Microsoft“ , „ Intel“ , „Embarcadero“ , „Oracle “ ir IBM . [ 14 ]
+
+C++ buvo sukurta atsižvelgiant į sisteminį programavimą ir įterptąją , ribotų išteklių programinę įrangą bei dideles sistemas, o pagrindiniai jos projektavimo akcentai buvo našumas , efektyvumas ir naudojimo lankstumas. [ 15 ] C++ taip pat buvo pripažinta naudinga daugelyje kitų kontekstų, o pagrindiniai jos privalumai yra programinės įrangos infrastruktūra ir ribotų išteklių programos, [ 15 ] įskaitant darbalaukio programas , vaizdo žaidimus , serverius (pvz., el. prekybą , žiniatinklio paiešką ar duomenų bazes ) ir našumui svarbias programas (pvz., telefono komutatorius ar kosminius zondus ). [ 16 ]
+
+C++ standartizuoja Tarptautinė standartizacijos organizacija (ISO), o naujausią standarto versiją ISO ratifikavo ir paskelbė 2024 m. spalio mėn. kaip ISO/IEC 14882:2024 (neoficialiai žinomas kaip C++23 ). [ 17 ] C++ programavimo kalba iš pradžių buvo standartizuota 1998 m. kaip ISO/IEC 14882:1998 , kuris vėliau buvo iš dalies pakeistas C++03 , C++11 , C++14 , C++17 ir C++20 standartais. Dabartinis C++23 standartas pakeičia šiuos standartus naujomis funkcijomis ir išplėsta standartų biblioteka . Prieš pradinę standartizaciją 1998 m., C++ nuo 1979 m. kūrė Stroustrupas „Bell Labs“ kaip C kalbos plėtinį; jis norėjo efektyvios ir lanksčios kalbos, panašios į C, kuri taip pat turėtų aukšto lygio funkcijas programų organizavimui. [ 18 ] Nuo 2012 m. C++ išleidimo grafikas buvo treji metai [ 19 ] , o kitas planuojamas standartas – C++26 . [ 20 ]
+
+Nepaisant plataus C++ kalbos paplitimo, kai kurie žymūs programuotojai kritikavo ją , įskaitant Linusą Torvaldsą , [ 21 ] Richardą Stallmaną , [ 22 ] Joshua Blochą , Keną Thompsoną , [ 23 ] [ 24 ] [ 25 ] ir Donaldą Knuthą . [ 26 ] [ 27 ] Taip yra daugiausia dėl rankinio atminties valdymo, dėl kurio ji yra pažeidžiama buferio perpildymo klaidų, kurios kelia saugumo riziką. [ 28 ]
+
+Istorija
+
+Bjarne Stroustrup, C++ kūrėjas, savo AT&T biure Naujajame Džersyje, apie  2000 m .
+1979 m. Danijos kompiuterių mokslininkas Bjarne Stroustrup pradėjo dirbti ties „„C su klasėmis “ – C++ pirmtakė. [ 29 ] Motyvacija sukurti naują kalbą kilo iš Stroustrupo programavimo patirties, susijusios su jo daktaro disertacija. Stroustrupas nustatė, kad „Simula“ turi funkcijų, kurios buvo labai naudingos kuriant didelę programinę įrangą, tačiau kalba buvo per lėta praktiniam naudojimui, o BCPL buvo greita, bet per žemo lygio, kad tiktų didelės apimties programinės įrangos kūrimui. Kai Stroustrupas pradėjo dirbti AT&T Bell Labs , jam iškilo problema analizuoti UNIX branduolį paskirstytųjų skaičiavimų atžvilgiu. Prisimindamas savo daktaro disertacijos patirtį, Stroustrupas nusprendė patobulinti C kalbą, pridedant „Simula“ tipo funkcijas. [ 30 ] C buvo pasirinkta, nes ji buvo bendrosios paskirties, greita, nešiojama ir plačiai naudojama. Be C ir „Simula“ įtakos, šiai naujai kalbai įtakos turėjo ir kitos kalbos, įskaitant ALGOL 68 , Ada , CLU ir ML . [ reikalinga citata ]
+
+Iš pradžių Stroustrupo „C su klasėmis“ pridėjo C kompiliatoriui „Cpre“ funkcijų, įskaitant klases , išvestines klases , stiprų tipizavimą , įterpimą ir numatytuosius argumentus . [ 31 ]
+
+
+2015 m. Paryžiuje vyks viktorina apie C++11 funkcijas
+1982 m. Stroustrupas pradėjo kurti C kalbos įpėdinį su klasėmis, kurį, peržiūrėjęs kelis kitus pavadinimus, pavadino „C++“ ( ++tai yra C kalbos didinimo operatorius ). Buvo pridėta naujų funkcijų, įskaitant virtualias funkcijas , funkcijos pavadinimų ir operatorių perkrovą , nuorodas , konstantas, tipo atžvilgiu saugų laisvos saugyklos atminties paskirstymą (nauja/ištrinti), patobulintą tipo tikrinimą ir BCPL stiliaus vienos eilutės komentarus su dviem pasviraisiais brūkšniais ( //). Be to, Stroustrupas sukūrė naują, atskirą C++ kompiliatorių – „Cfront“ .
+
+1984 m. Stroustrupas įgyvendino pirmąją srauto įvesties/išvesties biblioteką. Idėją pateikti išvesties operatorių, o ne įvardintą išvesties funkciją, pasiūlė Doug McIlroy [ 2 ] (anksčiau siūlęs Unix kanalus ).
+
+1985 m. buvo išleistas pirmasis „C++ programavimo kalbos“ leidimas , kuris tapo galutiniu kalbos etalonu, nes tuo metu nebuvo oficialaus standarto. [ 32 ] Pirmoji komercinė C++ versija buvo išleista tų pačių metų spalį. [ 29 ]
+
+1989 m. buvo išleista C++ 2.0, o 1991 m. – atnaujintas antrasis „C++ programavimo kalbos“ leidimas. [ 33 ] Naujos 2.0 versijos funkcijos apėmė daugybinį paveldėjimą, abstrakčias klases, statines narių funkcijas, konstantų narių funkcijas ir apsaugotus narius. 1990 m. buvo išleistas „Anotuotas C++ žinynas“ . Šis darbas tapo būsimo standarto pagrindu. Vėlesnės funkcijos apėmė šablonus , išimtis , vardų erdves , naujus tipizavimus ir loginį tipą .
+
+1998 m. buvo išleista C++98 kalba, kuri standartizavo kalbą, o nedidelis atnaujinimas ( C++03 ) buvo išleistas 2003 m.
+
+Po C++98, C++ vystėsi gana lėtai, kol 2011 m. buvo išleistas C++11 standartas, papildantis daugybę naujų funkcijų, dar labiau išplečiantis standartų biblioteką ir suteikiantis daugiau patogumų C++ programuotojams. Po nedidelio C++14 atnaujinimo, išleisto 2014 m. gruodžio mėn., C++17 buvo pristatyta įvairių naujų papildymų . [ 34 ] Baigus rengti 2020 m. vasarį, [ 35 ] C++20 standarto projektas buvo patvirtintas 2020 m. rugsėjo 4 d. ir oficialiai paskelbtas 2020 m. gruodžio 15 d. [ 36 ] [ 37 ]
+
+2018 m. sausio 3 d. Stroustrupas buvo paskelbtas 2018 m. Charleso Starko Draperio inžinerijos premijos laureatu „už C++ programavimo kalbos sugalvojimą ir kūrimą“. [ 38 ]
+
+2022 m. gruodžio mėn. C++ užėmė trečiąją vietą TIOBE indekse , pirmą kartą indekso istorijoje aplenkdama „Java“ . 2024 m. lapkričio mėn. duomenimis , kalba užėmė antrąją vietą po „Python“ , o „Java“ – trečiąją. [ 39 ]
+
+Etimologija
+Pasak Stroustrupo, „pavadinimas rodo evoliucinį C kalbos pokyčių pobūdį.“ [ 40 ] Šis pavadinimas priskiriamas Rickui Mascitti (1983 m. vidurys) [ 31 ] ir pirmą kartą buvo pavartotas 1983 m. gruodžio mėn. Kai 1992 m. Mascitti buvo neoficialiai paklaustas apie pavadinimą, jis nurodė, kad jis buvo suteiktas ironiškai . Pavadinimas kilęs iš C kalbos operatoriaus (kuris didina kintamojo reikšmę ) ++ ir įprastos pavadinimų suteikimo konvencijos , kai „ +“ naudojamas patobulintai kompiuterinei programai nurodyti.
+
+C++ kūrimo laikotarpiu ši kalba, prieš įgydama galutinį pavadinimą, buvo vadinama „naująja C“ ir „C su klasėmis“ [ 31 ] [ 41 ] .
+
+Filosofija
+Per visą C++ gyvavimo ciklą jos kūrimas ir evoliucija buvo grindžiami principais: [ 30 ]
+
+Jis turi būti pagrįstas realiomis problemomis, o jo funkcijos turėtų būti iš karto naudingos realaus pasaulio programose.
+Kiekviena funkcija turėtų būti įgyvendinama (su pakankamai akivaizdžiu būdu tai padaryti).
+Programuotojai turėtų turėti laisvę pasirinkti savo programavimo stilių, ir C++ turėtų visiškai palaikyti tą stilių.
+Svarbiau leisti naudoti naudingą funkciją, nei užkirsti kelią bet kokiam galimam C++ netinkamam naudojimui.
+Ji turėtų sudaryti sąlygas programoms suskirstyti į atskiras, aiškiai apibrėžtas dalis ir sujungti atskirai sukurtas dalis.
+Nėra jokių numanomų tipų sistemos pažeidimų (tačiau leidžiami aiškūs pažeidimai, t. y. tie, kurių aiškiai prašo programuotojas).
+Vartotojo sukurti tipai turi turėti tokį patį palaikymą ir našumą kaip ir integruoti tipai.
+Nenaudojamos funkcijos neturėtų neigiamai paveikti sukurtų vykdomųjų failų (pvz., sumažinti našumą).
+Po C++ neturėtų būti jokių kalbų (išskyrus asemblerio kalbą ).
+C++ turėtų veikti kartu su kitomis esamomis programavimo kalbomis , o ne kurti savo atskirą ir nesuderinamą programavimo aplinką .
+Jei programuotojo ketinimai nežinomi, leiskite programuotojui juos nurodyti, suteikdami rankinį valdymą.
+Standartizacija
+Pagrindiniai straipsniai: C++03 , C++11 , C++14 , C++17 , C++20 , C++23 ir C++26
+C++ standartai
+Metai	ISO/IEC standartas	Neoficialus pavadinimas
+1998 m.	14882:1998 [ 42 ]	C++98
+2003 m.	14882:2003 [ 43 ]	C++03
+2011 m.	14882:2011 [ 44 ]	C++11 , C++0x
+2014 m.	14882:2014 [ 45 ]	C++14 , C++1y
+2017 m.	14882:2017 [ 46 ]	C++17 , C++1z
+2020 m.	14882:2020 [ 47 ]	C++20 , C++2a
+2024 m.	14882:2024 [ 17 ]	C++23 , C++2b
+Bus paskelbta vėliau		C++26 , C++2c
+C++ standartizuoja ISO darbo grupė, žinoma kaip JTC1/SC22/WG21 . Iki šiol ji paskelbė septynias C++ standarto versijas ir šiuo metu dirba prie kitos versijos – C++26 .
+
+
+Scena C++ standartų komiteto posėdžio Stokholme metu 1996 m.
+1998 m. ISO darbo grupė pirmą kartą standartizavo C++ kaip ISO/IEC 14882:1998 , kuris neoficialiai žinomas kaip C++98 . 2003 m. ji paskelbė naują C++ standarto versiją, pavadintą ISO/IEC 14882:2003 , kurioje ištaisytos C++98 nustatytos problemos.
+
+Kita svarbi standarto redakcija neoficialiai buvo vadinama „C++0x“, tačiau ji buvo išleista tik 2011 m. [ 48 ] C++11 (14882:2011) apėmė daug pagrindinės kalbos ir standartinės bibliotekos papildymų. [ 44 ]
+
+2014 m. buvo išleista C++14 (taip pat žinoma kaip C++1y) kaip nedidelis C++11 plėtinys, kuriame daugiausia buvo ištaisytos klaidos ir atlikti nedideli patobulinimai. [ 49 ] Tarptautinio standarto projekto balsavimo procedūros buvo baigtos 2014 m. rugpjūčio viduryje. [ 50 ]
+
+Po C++14, 2017 m. liepos viduryje ISO C++ komitetas baigė rengti ir 2017 m. gruodžio mėn. patvirtino bei paskelbė pagrindinę C++17 redakciją, neoficialiai žinomą kaip C++1z. [ 51 ]
+
+Standartizacijos proceso metu ISO taip pat skelbia technines ataskaitas ir specifikacijas :
+
+ISO/IEC TR 18015:2006 [ 52 ] apie C++ naudojimą įterptosiose sistemose ir C++ kalbos bei bibliotekos funkcijų našumo įtaką,
+ISO/IEC TR 19768:2007 [ 53 ] (taip pat žinomas kaip C++ techninė ataskaita 1 ) apie bibliotekų plėtinius, daugiausia integruotus į C++ 11 ,
+ISO/IEC TR 29124:2010 [ 54 ] apie specialias matematines funkcijas, integruotas į C++17 ,
+ISO/IEC TR 24733:2011 [ 55 ] dėl dešimtainės slankiojo kablelio aritmetikos,
+ISO/IEC TS 18822:2015 [ 56 ] apie standartinę failų sistemos biblioteką, integruotą į C++17 ,
+ISO/IEC TS 19570:2015 [ 57 ] apie lygiagrečias standartinių bibliotekų algoritmų versijas, integruotas į C++17 ,
+ISO/IEC TS 19841:2015 [ 58 ] dėl programinės įrangos transakcinės atminties ,
+ISO/IEC TS 19568:2015 [ 59 ] apie naują bibliotekos plėtinių rinkinį, iš kurių kai kurie jau integruoti į C++17 ,
+ISO/IEC TS 19217:2015 [ 60 ] apie C++ koncepcijas , integruotas į C++20 ,
+ISO/IEC TS 19571:2016 [ 61 ] apie bibliotekos plėtinius lygiagrečiam veikimui, kai kurie iš jų jau integruoti į C++20 ,
+ISO/IEC TS 19568:2017 [ 62 ] dėl naujo bendrosios paskirties bibliotekų plėtinių rinkinio,
+ISO/IEC TS 21425:2017 [ 63 ] apie bibliotekos plėtinius diapazonams, integruotus į C++20 ,
+ISO/IEC TS 22277:2017 [ 64 ] apie korutinas, integruotas į C++20 ,
+ISO/IEC TS 19216:2018 [ 65 ] dėl tinklų bibliotekos,
+ISO/IEC TS 21544:2018 [ 66 ] apie modulius, integruotus į C++20 ,
+ISO/IEC TS 19570:2018 [ 67 ] apie naują bibliotekos plėtinių rinkinį, skirtą lygiagretumui
+ISO/IEC TS 23619:2021 [ 68 ] dėl naujų reflektyvaus programavimo (refleksijos) plėtinių,
+ISO/IEC TS 9922:2024 [ 69 ] dėl naujo lygiagrečių plėtinių rinkinio ir
+ISO/IEC TS 19568:2024 [ 70 ] apie dar vieną naują bibliotekos plėtinių rinkinį.
+Daugiau techninių specifikacijų yra rengiamos ir laukiama patvirtinimo.
+
+Kalba
+Pagrindinis straipsnis: C++ sintaksė
+C++ kalba turi du pagrindinius komponentus: tiesioginį aparatinės įrangos funkcijų atvaizdavimą, kurį daugiausia teikia C pogrupis, ir abstrakcijas be jokių papildomų išlaidų, pagrįstas šiais atvaizdavimais. Stroustrupas apibūdina C++ kaip „lengvą abstrakcijos programavimo kalbą [sukurtą] efektyvioms ir elegantiškoms abstrakcijoms kurti ir naudoti“; [ 15 ] ir „tiek aparatinės įrangos prieigos, tiek abstrakcijos siūlymas yra C++ pagrindas. Efektyvus taikymas yra tai, kas ją išskiria iš kitų kalbų“ [ 71 ] .
+
+C++ paveldi didžiąją dalį C sintaksės . „Hello world“ programa, atitinkanti C standartą, taip pat yra galiojanti C++ „Hello world“ programa. Toliau pateikiama Bjarne'o Stroustrupo „ Hello world“ programos versija , kuri naudoja C++ standartinės bibliotekos srauto priemonę pranešimui į standartinę išvestį rašyti : [ 72 ] [ 73 ] [ 2 pastaba ]
+
+#įtraukti <iostream> 
+
+int main () 
+{
+    std :: cout << "Sveikas, pasauli! \n " ;  
+}
+Standartinė biblioteka
+
+Standarto „Darbinio dokumento“ projektas, kuris buvo patvirtintas kaip C++98; pusė jo apimties buvo skirta C++ standartų bibliotekai.
+Pagrindinis straipsnis: C++ standartinė biblioteka
+C++ standartą sudaro dvi dalys: pagrindinė kalba ir standartinė biblioteka. C++ programuotojai tikisi pastarosios iš kiekvienos pagrindinės C++ versijos; ji apima agregatinius tipus ( vektorius , sąrašus, žemėlapius, rinkinius, eiles, stekus, masyvus, rinkinius), algoritmus (find, for_each , binary_search , random_shuffle ir kt.), įvesties/išvesties funkcijas ( iostream , skaitymui iš konsolės ir failų bei rašymui į juos), failų sistemos biblioteką, lokalizacijos palaikymą, išmaniuosius rodykles automatiniam atminties valdymui, reguliariųjų išraiškų palaikymą, daugiasriegę biblioteką, atominių elementų palaikymą (leidžiantį kintamąjį skaityti arba į jį rašyti ne daugiau kaip vienam siūlui vienu metu be jokios išorinės sinchronizacijos), laiko priemones (matavimas, dabartinio laiko gavimas ir kt.), sistemą, skirtą klaidų ataskaitų konvertavimui, kuri nenaudoja C++ išimčių , į C++ išimtis, atsitiktinių skaičių generatorių ir šiek tiek modifikuotą C standartinės bibliotekos versiją (kad ji atitiktų C++ tipų sistemą).
+
+Didelė C++ bibliotekos dalis yra pagrįsta standartine šablonų biblioteka (STL). Naudingi STL įrankiai apima konteinerius kaip objektų (pvz., vektorių ir sąrašų ) rinkinius, iteratorius , kurie suteikia masyvo tipo prieigą prie konteinerių, ir algoritmus , kurie atlieka tokias operacijas kaip paieška ir rūšiavimas.
+
+Be to, pateikiami (daugialypiai) žemėlapiai ( asociatyvūs masyvai ) ir (daugialypiai) rinkiniai, kurie visi eksportuoja suderinamas sąsajas. Todėl naudojant šablonus galima rašyti bendrinius algoritmus, kurie veikia su bet kokiu konteineriu arba bet kuria iteratorių apibrėžta seka.
+
+Kaip ir C kalboje, bibliotekos funkcijas galima pasiekti naudojant direktyvą , kad būtų įtraukta standartinė antraštė . C++ standartinė biblioteka teikia 105 standartines antraštes, iš kurių 27 yra nebenaudojamos. Įdiegus modulius C++20 kalboje , šias antraštes galima pasiekti naudojant , o C++23 kalboje visą standartinę biblioteką dabar galima tiesiogiai importuoti kaip patį modulį su . Šiuo metu C++ standartinė biblioteka teikia du modulius: ir (suderinamumo modulį , kuris eksportuoja C standartinės bibliotekos priemones į pasaulinę vardų erdvę). #include importimport std;stdstd.compatstd
+
+Standarte integruotas STL, kurį iš pradžių sukūrė Aleksandras Stepanovas , daugelį metų eksperimentavęs su bendriniais algoritmais ir konteineriais. Pradėjęs dirbti su C++, jis pagaliau rado kalbą, kuria galima kurti bendrinius algoritmus (pvz., STL rūšiavimą), kurie veikia dar geriau nei, pavyzdžiui, C standartinė biblioteka „qsort“, dėka tokių C++ funkcijų kaip įterpimas ir kompiliavimo laiko susiejimas vietoj funkcijų rodyklių. Standarte jis nevadinamas „STL“, nes tai tik standartinės bibliotekos dalis, tačiau šis terminas vis dar plačiai vartojamas siekiant jį atskirti nuo likusios standartinės bibliotekos dalies (įvesties / išvesties srautai, internacionalizavimas, diagnostika, C bibliotekos pogrupis ir kt.). [ 74 ]
+
+Dauguma C++ kompiliatorių, ir visi pagrindiniai, pateikia standartus atitinkantį C++ standartinės bibliotekos įgyvendinimą.
+
+C++ pagrindinės gairės
+C++ pagrindinės gairės [ 75 ] yra iniciatyva, kuriai vadovauja C++ išradėjas Bjarne Stroustrup ir C++ ISO darbo grupės sušaukėjas bei pirmininkas Herb Sutter, skirta padėti programuotojams rašyti „šiuolaikinę C++“, taikant geriausią kalbos standartų C++11 ir naujesnių versijų praktiką, ir padėti kompiliatorių bei statinės patikros įrankių kūrėjams sukurti taisykles blogai programavimo praktikai aptikti.
+
+Pagrindinis tikslas yra efektyviai ir nuosekliai rašyti tipams ir ištekliams saugų C++.
+
+Pagrindinės gairės buvo paskelbtos [ 76 ] atidarymo kalboje CPPCon 2015 konferencijoje.
+
+Prie gairių pridedama gairių palaikymo biblioteka (GSL) [ 77 ] – tik antraštės tipo ir funkcijų biblioteka, skirta pagrindinėms gairėms įgyvendinti, ir statinės tikrinimo priemonės, skirtos gairių taisyklių vykdymui [ 78 ] .
+
+Suderinamumas
+Siekdamas suteikti kompiliatorių tiekėjams daugiau laisvės, C++ standartų komitetas nusprendė nediktuoti pavadinimų keitimo , išimčių tvarkymo ir kitų su įdiegimu susijusių funkcijų įgyvendinimo. Šio sprendimo trūkumas yra tas, kad skirtingų kompiliatorių sukurtas objektinis kodas turėtų būti nesuderinamas. Tačiau bandoma standartizuoti kompiliatorius konkretiems kompiuteriams ar operacinėms sistemoms . Pavyzdžiui, „Itanium C++ ABI“ yra nepriklausomas nuo procesoriaus (nepaisant jo pavadinimo) ir yra įgyvendinamas GCC ir Clang. [ 79 ]
+
+Su C
+Pagrindinis straipsnis: C ir C++ suderinamumas
+C++ dažnai laikoma C superrinkiniu, tačiau tai nėra visiškai tiesa. [ 80 ] Didžiąją dalį C kodo galima lengvai priversti teisingai sukompiliuotis C++, tačiau yra keletas skirtumų, dėl kurių kai kurie galiojantys C kodai yra negaliojantys arba veikia kitaip C++. Pavyzdžiui, C leidžia netiesioginį konvertavimą iš į kitus rodyklių tipus, o C++ to nedaro (dėl tipo saugumo priežasčių). Be to, C++ apibrėžia daug naujų raktinių žodžių, tokių kaip ir , kurie gali būti naudojami kaip identifikatoriai (pavyzdžiui, kintamųjų pavadinimai) C programoje. void*newclass
+
+Kai kurie nesuderinamumai buvo pašalinti 1999 m. atnaujinus C standartą ( C99 ), kuris dabar palaiko C++ funkcijas, tokias kaip eilučių komentarai ( //) ir deklaracijos, sumaišytos su kodu. Kita vertus, C99 pristatė keletą naujų funkcijų, kurių C++ nepalaikė ir kurios buvo nesuderinamos arba nereikalingos C++, pavyzdžiui, kintamo ilgio masyvai , vietiniai kompleksinių skaičių tipai (tačiau C++ standarto bibliotekoje esanti klasė teikia panašias funkcijas, nors ir nesuderinamos su kodu), paskirtieji inicializatoriai, sudėtiniai literalai ir raktinis žodis. [ 81 ] Kai kurios C99 pristatytos funkcijos buvo įtrauktos į vėlesnę C++ standarto versiją C++11 (iš tų, kurios nebuvo nereikalingos). [ 82 ] [ 83 ] [ 84 ] Tačiau C++11 standartas įveda naujų nesuderinamumų, pavyzdžiui, neleidžia priskirti eilutės literalo simbolių rodyklei, kuri lieka galiojanti C kalboje. std::complexrestrict
+
+Norint sumaišyti C ir C++ kodus, bet kokia funkcijos deklaracija ar apibrėžimas, kuris bus iškviečiamas iš C ir C++ kalbų / naudojamas abiejose kalbose, turi būti deklaruotas su C sąsaja, įdedant ją į bloką. Tokia funkcija negali pasikliauti funkcijomis, priklausančiomis nuo pavadinimų klastojimo (t. y. funkcijų perkrovos). extern "C" {/*...*/}
+
+Įmontuotas surinkimas
+C arba C++ kalbomis sukurtos programos dažnai naudoja vidinį asemblerio kodą, kad išnaudotų žemo lygio funkcijas, didesnį greitį ir patobulintą valdymą, palyginti su aukšto lygio programavimo kalbomis [ 85 ] [ 86 ] , kai būtina optimizuoti našumą. C++ palaiko asemblerio kalbos įterpimą naudojant asm deklaracijas [ 87 ] , tačiau vidinio asemblerio suderinamumas labai skiriasi tarp kompiliatorių ir architektūrų. Skirtingai nuo aukšto lygio kalbų funkcijų, tokių kaip Python ar Java , asemblerio kodas labai priklauso nuo pagrindinio procesoriaus ir kompiliatoriaus įgyvendinimo.
+
+Kompiliatorių skirtumai
+Skirtingi C++ kompiliatoriai įgyvendina vidinį surinkimą skirtingais būdais.
+
+GCC ( GNU kompiliatorių rinkinys ) ir Clang : [ 88 ] Naudojama išplėstinė GCC eilutinė asemblerio sintaksė. Rašant kodą, kurį galima kompiliuoti su ir parinktimis, __asm__vietoj naudojamas raktinis žodis , o tai leidžia nurodyti įvesties/išvesties operandus ir išplėstinius registrus. Šis metodas yra plačiai taikomas, įskaitant Intel [ 89 ] ir IBM [ 90 ] kompiliatorius.asm-ansi-std
+MSVC ( „Microsoft Visual C++ “): Į kompiliatorių integruotas įterptinis asembleris. Anksčiau jis buvo palaikomas per __asmraktinį žodį , tačiau šis palaikymas 64 bitų režime buvo pašalintas, todėl reikia atskirų .asm modulių. [ 91 ]
+TI ARM Clang ir įterptieji kompiliatoriai: [ 92 ] Kai kurie įterptųjų sistemų kompiliatoriai, pavyzdžiui, „Texas Instruments“ „TI Arm Clang“, leidžia naudoti tiesioginį surinkimą, tačiau taiko griežtesnes taisykles, kad būtų išvengta konfliktų su registrų ir iškvietimo konvencijomis.
+C++ ir Assembly sąveikumas
+C++ siūlo du pagrindinius ASM kodo integravimo metodus.
+
+1. Atskiros surinkimo bylos – surinkimo kodas rašomas atskirai ir susietas su C++ kodu. [ 93 ]
+
+2. Įterptinis surinkimas – surinkimo kodas įterpiamas į C++ kodą naudojant kompiliatoriui būdingus plėtinius.
+
+ASM suderinamumo kodo pavyzdys
+Kviečiant surinkimo funkciją iš C++, naudokite , kad išvengtumėte C++ pavadinimų iškraipymo.extern "C"
+//main.cpp
+importuoti standartą ; 
+
+extern "C" int add_asm ( int , int ); // Apibūdiname surinkimo funkciją      
+
+int main () {  
+    sveikasis rezultatas = add_asm ( 5 , 7 );    
+    std :: println ( "Rezultatas iš ASM: {}" , rezultatas ); 
+    grąžinti 0 ; 
+}
+#asm kodas naudojant RISC-V architektūrą
+.skyrius .tekstas​​ 
+.global add_asm​ 
+
+pridėti_asm :
+    add a0 , a0 , a1 # Pridėti pirmą argumentą ( a0 ) ir antrą argumentą ( a1 ), išsaugoti langelyje a0                
+    ret # Return ( a0 turi grąžinamą reikšmę )                  
+Globalūs kintamieji asemblerio kalboje turi būti deklaruojami kaip externC++ ir pažymėti .globalasemblerio kalboje.
+// main.cpp
+importuoti standartą ; 
+
+extern "C" int global_var ; // Deklaruojamas globalusis kintamasis iš asemblerio     
+
+int main () {  
+    std :: println ( "Globalus kintamasis iš ASM: {}" , global_var ); 
+    grąžinti 0 ; 
+}
+#asm naudojant RISC-V architektūrą
+.skyrius . duomenys​ 
+.global global_var​ 
+lygiuoti 4​ 
+globalus_kintamasis :
+    .word 42 # Apibrėžkite sveikojo skaičiaus reikšmę       
+Įterptinis surinkimas leidžia įterpti ASM tiesiai į C++ naudojant asmraktinį žodį .
+//main.cpp (naudojant GCC/CLANG kompiliatorių)
+importuoti standartą ; 
+
+int main () {  
+    sveikasis skaičius x = 10 , y = 20 , suma ;       
+
+    asm nepastovus (  
+        "pridėti %0, %1, %2"
+        : "=r" ( suma ) // Išvesties operandas (saugomas registre)     
+        : „r“ ( x ), „r“ ( y ) // Įvesties operandai (saugomi registruose)     
+    );
+
+    std :: println ( "Suma naudojant įterptąjį ASM: {}" , sum ); 
+    grąžinti 0 ; 
+}
+Taip pat žr.
+piktograma	Kompiuterių programavimo portalas
+Anglis (programavimo kalba)
+Programavimo kalbų palyginimas
+C++ kompiliatorių sąrašas
+C++ planas
+Kategorija:C++ bibliotekos

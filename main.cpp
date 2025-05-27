@@ -6,11 +6,12 @@
 #include <sstream>
 #include <cctype>
 #include <regex>
+#include <locale>
 
 // Patikrina ar žodis yra URL
 bool isUrl(const std::string& token) {
-    std::regex url_regex(R"(^(https?:\/\/)?(www\.)?[a-zA-Z0-9\.-]+\.[a-z]{2,}(\/\S*)?$)"); // url patternas
-    return std::regex_match(token, url_regex); // Tikriname ar atitinka URL formatą
+    std::regex url_regex(R"(^(https?:\/\/)?(www\.)?[a-zA-Z0-9\.-]+\.[a-z]{2,}(\/\S*)?$)");
+    return std::regex_match(token, url_regex);
 }
 
 // Funkcija URL'ų suradimui ir išvedimui į failą
@@ -52,10 +53,9 @@ bool extractUrls(const std::string& input_filename, const std::string& output_fi
 // Funkcija žodžio išvalymui ir normalizavimui
 std::string normalizeWord(const std::string& token) {
     std::string cleaned;
-    for (char c : token) {
-        char lower = std::tolower(c);
-        if (std::isalpha(lower)) {
-            cleaned += lower;
+    for (unsigned char c : token) {
+        if ((c >= 128) || std::isalpha(c)) { // leidžia ne tik ASCII, bet ir UTF-8 simbolius
+            cleaned += std::tolower(c);
         }
     }
     return cleaned;
@@ -74,16 +74,13 @@ bool analyzeTextFile(const std::string& filename,
     std::string line;
     int line_number = 0;
 
-    // Nuskaitome failą eilutė po eilutės
     while (std::getline(input_file, line)) {
         ++line_number;
         std::istringstream iss(line);
         std::string token;
 
-        // Skaidome eilutę į žodžius
         while (iss >> token) {
             std::string normalized = normalizeWord(token);
-            
             if (!normalized.empty()) {
                 word_counts[normalized]++;
                 word_lines[normalized].insert(line_number);
@@ -137,7 +134,6 @@ bool createOutputFile(const std::string& filename,
     int unique_words_total = 0;
     int frequent_words_count = 0;
 
-    // std::map saugo elementus surūšiuotus pagal raktą (žodį)
     for (const auto& pair : word_counts) {
         unique_words_total++;
         if (pair.second > 1) {
@@ -155,34 +151,38 @@ bool createOutputFile(const std::string& filename,
 }
 
 int main() {
+    // Nustatome lokalę į lietuvių kalbą su UTF-8
+    try {
+    std::locale utf8_locale("en_US.UTF-8");
+    std::cin.imbue(utf8_locale);
+    std::cout.imbue(utf8_locale);
+    } catch (...) {
+    std::cerr << "UTF-8 locale not available, continuing with default locale.\n";
+    }
+
     const std::string input_filename = "input.txt";
     const std::string output_filename = "output.txt";
     const std::string cross_ref_filename = "cross_reference.txt";
     const std::string url_output_file = "urls.txt";
 
-    // Duomenų struktūros žodžių saugojimui
-    std::map<std::string, int> word_counts;          // žodis → pasikartojimų skaičius
-    std::map<std::string, std::set<int>> word_lines; // žodis → eilučių numeriai
+    std::map<std::string, int> word_counts;
+    std::map<std::string, std::set<int>> word_lines;
 
-    // Analizuojame įvesties failą
     if (!analyzeTextFile(input_filename, word_counts, word_lines)) {
         return 1;
     }
 
-    // Kuriame cross reference faila
     if (createCrossReferenceFile(cross_ref_filename, word_counts, word_lines)) {
         std::cout << "Cross-reference issaugotas faile: " << cross_ref_filename << std::endl;
     }
 
-    // Kuriame pagrindiniu rezultatu faila
     if (createOutputFile(output_filename, word_counts)) {
         std::cout << "Rezultatai issaugoti faile: " << output_filename << std::endl;
     }
 
-    if(extractUrls(input_filename, url_output_file)){
+    if (extractUrls(input_filename, url_output_file)) {
         std::cout << "URL adresai issaugoti faile: " << url_output_file << std::endl;
     }
-
 
     return 0;
 }
