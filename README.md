@@ -26,7 +26,14 @@ g++ -std=c++17 -o main main.cpp
 ```
 
 Arba naudokite kitą C++ kompiliatorių su C++17 ar naujesne versija.
+## Arba
 
+```Naudojant CMake
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
 ## Naudojimas
 
 1. **Paruoškite įvesties failą:**
@@ -38,14 +45,7 @@ Sukurkite `input.txt` failą tame pačiame kataloge. Šiame faile turi būti tek
 ```bash
 .\main.exe
 ```
-## Arba
 
-```Naudojant CMake
-mkdir build
-cd build
-cmake ..
-cmake --build .
-```
 3. **Rezultatai:**
 
 Programa sugeneruos tris išvesties failus:
