@@ -9,8 +9,8 @@
 
 // Patikrina ar žodis yra URL
 bool isUrl(const std::string& token) {
-    std::regex url_regex(R"(^(https?:\/\/)?(www\.)?[a-zA-Z0-9\.-]+\.[a-z]{2,}(\/\S*)?$)");
-    return std::regex_match(token, url_regex);
+    std::regex url_regex(R"(^(https?:\/\/)?(www\.)?[a-zA-Z0-9\.-]+\.[a-z]{2,}(\/\S*)?$)"); // url patternas
+    return std::regex_match(token, url_regex); // Tikriname ar atitinka URL formatą
 }
 
 // Funkcija URL'ų suradimui ir išvedimui į failą
